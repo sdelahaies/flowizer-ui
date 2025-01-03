@@ -1,0 +1,47 @@
+
+.react-flow__node {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ea580c;
+
+    border-radius: 10px;
+    background: #201f21;
+
+}
+ 
+/* .react-flow__node.selectable:focus {
+
+    border-radius: 10px;
+    border-color: #f1d900;
+} */
+ 
+.react-flow__node.selectable:focus:active {
+    box-shadow: var(--xy-node-boxshadow-default);
+}
+ 
+ 
+ 
+.react-flow__node.selectable.selected {
+    border-radius: 10px;
+    border-color: #f1d900;
+}
+
+ 
+.react-flow__edge.selectable:hover .react-flow__edge-path,
+.react-flow__edge.selectable.selected .react-flow__edge-path {
+    stroke: var(--xy-theme-edge-hover);
+}
+
+ 
+
+ 
+.react-flow__handle.connectionindicator:focus , 
+.react-flow__handle.connectingfrom,
+.react-flow__handle.connectingto {
+    border-color: var(--xy-theme-edge-hover);
+}
+ 
+
